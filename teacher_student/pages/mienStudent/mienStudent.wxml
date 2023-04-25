@@ -1,0 +1,14 @@
+<view class="container" wx:if="{{users.id}}">
+  <view class="student" id="{{item.id}}" bindtap="go_detail" wx:for="{{mienStudents}}" wx:key="id">
+    <view class="title">{{item.title}}</view>
+    <view class="photo">
+      <image class="img" src="{{item.url}}"></image>
+      <view class="name">{{item.name}}</view>
+    </view>
+    <view class="text">{{item.text[0]}}</view>
+  </view>
+</view>
+<view wx:else class="NoLogin">
+  <image src="../../static/image/img/kongkong.png"></image>
+  <view>未登录！！！</view>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <!-- 文章具体内容 -->
+  <view class="hot">
+    <view class="title">{{hotNew.title}}</view>
+    <image class="img" src="{{hotNew.url}}"></image>
+    <view class="text">{{hotNew.img_text}}</view>
+  </view>
+</view>

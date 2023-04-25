@@ -1,0 +1,28 @@
+.updateImg {
+  width: 100%;
+  padding: 20rpx;
+}
+
+.updateImg .update {
+  width: 100rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 1rpx solid rgba(0, 0, 0, .5);
+  border-radius: 20rpx;
+}
+.updateImg .img{
+  width: 500rpx;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  margin-top: 10rpx;
+  border: 1rpx solid #ccc;
+}
+
+.updateImg .img image{
+  width: 400rpx;
+  height: 250rpx;
+  margin-top: 25rpx;
+}

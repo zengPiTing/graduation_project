@@ -1,0 +1,50 @@
+<view class="student">
+  <view class="test">
+    <text class="title">{{student.nickname}}</text>
+    <image src="{{student.photo}}"></image>
+  </view>
+  <view class="test">
+    <text class="title">学号</text>
+    <text class="nickname">{{student.student_number}}</text>
+  </view>
+  <view class="test">
+    <text class="title">导师</text>
+    <text class="nickname">{{student.daoshi_name}}</text>
+  </view>
+  <view class="test">
+    <text class="title">专业</text>
+    <text class="nickname">{{student.domain}}</text>
+  </view>
+  <view class="test">
+    <text class="title">班级</text>
+    <text class="nickname">{{student._class}}</text>
+  </view>
+  <view class="test">
+    <text class="title">宿舍</text>
+    <text class="nickname">{{student.student_dorm}}</text>
+  </view>
+  <view class="test">
+    <text class="title">民族</text>
+    <text class="nickname">{{student.minzu}}</text>
+  </view>
+  <view class="test">
+    <text class="title">籍贯</text>
+    <text class="nickname">{{student.jiguan}}</text>
+  </view>
+  <view class="test">
+    <text class="title">电话</text>
+    <text class="nickname">{{student.student_phone}}</text>
+  </view>
+  <view class="test">
+    <text class="title">出生年月</text>
+    <text class="nickname">{{student.date_birth}}</text>
+  </view>
+  <view class="remark">
+    <text class="title">学生申请备注</text>
+    <view class="remarkContent">{{student.studentRemark}}</view>
+  </view>
+  <view class="remark">
+    <text class="title">导师寄语</text>
+    <view class="remarkContent">{{student.comment}}</view>
+  </view>
+</view>

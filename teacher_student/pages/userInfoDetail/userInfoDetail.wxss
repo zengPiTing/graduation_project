@@ -1,0 +1,28 @@
+.student {
+  margin: 0 20rpx;
+  background: white;
+  border-radius: 20rpx;
+}
+
+.student .test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 70rpx 30rpx 20rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.remark{
+  padding: 30rpx 70rpx 30rpx 20rpx;
+}
+.remarkContent{
+  margin: 10rpx 0 10rpx 0;
+  text-indent: 2em;
+  border-radius: 10rpx;
+  border: 1rpx solid #ccc;
+  font-size: 28rpx;
+  padding: 10rpx;
+}

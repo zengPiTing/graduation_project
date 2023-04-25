@@ -1,0 +1,59 @@
+<view class="container">
+  <block wx:if="{{users.isTeacher==1}}">
+    <view class="head">
+      请补充完信息后选意向导师
+    </view>
+    <i-panel title="基础用法">
+      <i-input value="{{ users.nickname }}" type="text" title="姓名" disabled />
+      <i-input value="{{ users.student_number }}" type="text" title="学号" disabled />
+      <i-input id="student_phone" bind:change="getInput" value="{{ users.student_phone }}" type="number" title="联系电话" placeholder="请输入手机号" />
+      <i-input id="minzu" bind:change="getInput" value="{{ users.minzu }}" type="text" title="民族" placeholder="请输入民族" />
+      <i-input id="jiguan" bind:change="getInput" value="{{ users.jiguan }}" type="text" title="籍贯" placeholder="请输入籍贯" />
+      <i-input id="date_birth" bind:change="getInput" value="{{ users.date_birth }}" type="text" title="出生年月" placeholder="例:0000年00月" />
+      <i-input id="school" bind:change="getInput" value="{{ users.school?users.school:school }}" type="text" title="学院" placeholder="学院" />
+      <view class="flex">
+        <i-input id="domain" disabled value="{{ domain?domain:users.domain }}" type="text" title="专业" placeholder="专业" />
+        <view class="btnClass" bindtap="handleOpen1">请选择专业</view>
+      </view>
+      <i-action-sheet visible="{{ visible1 }}" actions="{{ showTitle }}" bind:cancel="handleCancel1" bind:click="handleClickItem1" />
+      <i-input id="_class" bind:change="getInput" value="{{ users._class }}" type="text" title="班级" placeholder="例:2119401" />
+      <i-input id="enrol_year" bind:change="getInput" value="{{ users.enrol_year }}" type="text" title="入学年份" placeholder="例:2019" />
+      <i-input id="student_dorm" bind:change="getInput" value="{{ users.student_dorm }}" type="text" title="宿舍" placeholder="例:博学X栋XXX" />
+    </i-panel>
+    <view class="updateImg">
+      <view class="update" bindtap="setPhoto">上传面部照片</view>
+      <view class="img">
+        <image src="{{photo?photo:users.photo}}"></image>
+      </view>
+    </view>
+    <view class="btn" bindtap="setUsers">点击提交</view>
+  </block>
+  <block wx:else="{{users.isTeacher==0}}">
+    <view class="isTeacher">
+      <view class="item">
+        <view class="title">姓名</view>
+        <view>{{users.nickname}}</view>
+      </view>
+      <view class="item">
+        <view class="title">学院</view>
+        <view>{{users.school}}</view>
+      </view>
+      <view class="itemJianjie">
+        <view>简介</view>
+        <view class="text">{{users.awards}}</view>
+      </view>
+      <view class="itemXueli">
+        <view>学历背景</view>
+        <view class="text">{{users.education}}</view>
+      </view>
+      <view class="itemChengjiu">
+        <view>成就简历</view>
+        <view class="text">{{users.epr}}</view>
+      </view>
+      <view class="item">
+        <view class="title">管理身份</view>
+        <view>{{users.isManager==0?'管理员':'非管理员'}}</view>
+      </view>
+    </view>
+  </block>
+</view>

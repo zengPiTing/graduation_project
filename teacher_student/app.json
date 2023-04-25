@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/show/show",
+    "pages/index/index",  
+    "pages/user/user",
+    "pages/hotNews/hotNews",
+    "pages/bind_message/bind_message",
+    "pages/feedback/feedback",
+    "pages/choice/choice",
+    "pages/detail/detail",
+    "pages/password/password",
+    "pages/management/management",
+    "pages/share/share",
+    "pages/login/login",
+    "pages/userInfo/userInfo",
+    "pages/record/record",
+    "pages/mienStudent/mienStudent",
+    "pages/hotDetail/hotDetail",
+    "pages/mienStudentDetail/mienStudentDetail",
+    "pages/userInfoDetail/userInfoDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87cedf",
+    "navigationBarTitleText": "智能学院本科生导师双选小程序"
+  },
+  "tabBar": {
+    "color": "#9d9d9d",
+    "selectedColor": "#2fa3df",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/image/tabBar_img/index.png",
+        "selectedIconPath": "/static/image/tabBar_img/index_checked.png"
+      },
+      {
+        "pagePath": "pages/mienStudent/mienStudent",
+        "text": "优秀学员",
+        "iconPath": "/static/image/tabBar_img/fengcaixuezi.png",
+        "selectedIconPath": "/static/image/tabBar_img/fengcaixuezi_checked.png"
+      },
+      {
+        "pagePath": "pages/hotNews/hotNews",
+        "text": "通知公告",
+        "iconPath": "/static/image/tabBar_img/hot.png",
+        "selectedIconPath": "/static/image/tabBar_img/hot_checked.png"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "导师信息",
+        "iconPath": "/static/image/tabBar_img/show.png",
+        "selectedIconPath": "/static/image/tabBar_img/show_checked.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "设置",
+        "iconPath": "/static/image/tabBar_img/my.png",
+        "selectedIconPath": "/static/image/tabBar_img/my_checked.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

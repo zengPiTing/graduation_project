@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="student">
+    <view class="title">{{mienstudent.title}}</view>
+    <view class="photo">
+      <image class="img" src="{{mienstudent.url}}"></image>
+      <view class="name">{{mienstudent.name}}</view>
+    </view>
+    <view class="text" wx:for="{{mienstudent.text}}" wx:key="index">
+      <view>{{item}}</view>
+    </view>
+  </view>
+</view>

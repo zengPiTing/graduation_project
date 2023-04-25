@@ -1,0 +1,23 @@
+<view class="container" wx:if="{{users.id}}">
+  <!-- 头部导航
+  <view class="head">
+    <view id="hot" bindtap="titleHandler" class="title {{hotOrnotice=='hot'?'active':''}}">热点新闻</view>
+    <view id="notice" bindtap="titleHandler" class="title {{hotOrnotice=='notice'?'active':''}}">通知公告</view>
+  </view> -->
+  <!-- 热点新闻内容模块 -->
+  <view class="hotContainer">
+    <view bindtap="goHotDetail" id="{{item.id}}" class="hotContent" wx:for="{{hotNews}}" wx:key="id">
+      <view class="hottitle">{{item.title}}</view>
+      <image class="hotimg" src="{{item.url}}"></image>
+      <view class="hottext">{{item.img_text}}</view>
+    </view>
+  </view>
+  <!-- 通知公告内容模块
+  <view wx:if="{{hotOrnotice=='notice'}}" class="noticeContainer">
+    我是通知
+  </view> -->
+</view>
+<view wx:else class="NoLogin">
+  <image src="../../static/image/img/kongkong.png"></image>
+  <view>未登录！！！</view>
+</view>

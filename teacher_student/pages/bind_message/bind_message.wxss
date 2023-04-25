@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+}
+
+.head {
+  margin: 20rpx;
+  margin-bottom: 50rpx;
+  font-weight: 600;
+  color: orange;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btnClass{
+  width: 180rpx;
+  height: 88rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-right: 28rpx;
+  box-sizing: border-box;
+  line-height: 88rpx;
+  background: #fff;
+  border: 1rpx solid #f5f5f5;
+  font-size: 14px;
+}
+
+.updateImg {
+  width: 100%;
+  padding: 20rpx;
+}
+
+.updateImg .update {
+  width: 150rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 1rpx solid rgba(0, 0, 0, .5);
+  border-radius: 20rpx;
+}
+
+.updateImg .img {
+  width: 500rpx;
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  margin-top: 10rpx;
+  border: 1rpx solid #ccc;
+}
+
+.updateImg .img image {
+  width: 400rpx;
+  height: 250rpx;
+  margin-top: 25rpx;
+}
+
+.btn {
+  width: 200rpx;
+  height: 60rpx;
+  margin: 50rpx auto;
+  text-align: center;
+  line-height: 60rpx;
+  border: 1rpx solid rgba(0, 0, 0, .5);
+  border-radius: 20rpx;
+}
+
+.isTeacher {
+  margin-top: 10rpx;
+  padding: 20rpx;
+}
+
+.isTeacher .item {
+  display: flex;
+  padding: 20rpx 0;
+  margin-bottom: 40rpx;
+  border: 1px solid #f5f5f5;
+  background: #f5f5f5;
+  border-radius: 10rpx;
+}
+
+.isTeacher .item .title {
+  margin-right: 30rpx;
+  margin-left: 20rpx;
+
+}
+
+.itemJianjie,
+.itemXueli,
+.itemChengjiu,
+.itemGuanli {
+  margin-bottom: 40rpx;
+}
+
+.isTeacher .text {
+  border: 1rpx solid #f5f5f5;
+  padding: 10rpx;
+  text-indent: 2em;
+  background: #f5f5f5;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}

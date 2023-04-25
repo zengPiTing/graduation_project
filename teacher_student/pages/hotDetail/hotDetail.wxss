@@ -1,0 +1,26 @@
+.container{
+  width: 100%;
+}
+.hot{
+  margin: 20rpx 20rpx;
+}
+.title{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 50rpx;
+}
+.img{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.text{
+  text-align: center;
+  border: 1rpx solid #ccc;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  text-indent: 2em;
+  border-radius: 10rpx;
+  background: #f5f5f5;
+}
